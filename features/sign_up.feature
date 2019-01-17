@@ -1,6 +1,7 @@
-# Created by bikash at 1/17/19
-Feature: #Enter feature name here
-  # Enter feature description here
+Feature: signup
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: Successfully create an account
+
+    Given I am a new user
+    When I fill signup form
+    Then User account should be created
